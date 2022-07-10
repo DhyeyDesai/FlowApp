@@ -3,7 +3,7 @@
     <h3>Login</h3>
 
     <!-- {{ model | json }} -->
-    <form #loginForm="ngForm">
+    <form #loginForm="ngForm" (ngSubmit) = "onClickSubmit(loginForm.value)">
       <div class="form-group">
         <input
           type="email"
@@ -12,7 +12,7 @@
           required
           placeholder="Email - admin@flowapp.com"
           [(ngModel)]="model.email"
-          name="name"
+          name="email"
         />
       </div>
 
@@ -32,7 +32,8 @@
           <input type="checkbox" />&nbsp;
           <label for="power">Remember me </label>
       </div>
-    <button type="submit" (click)="onSubmit()" class="btn btn-primary btn-block"> Login</button>
+ 
+    <input type = "submit" value = "submit" class="btn btn-primary btn-block">
 
     </form>
   </div>

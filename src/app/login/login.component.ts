@@ -16,9 +16,16 @@ export class LoginComponent {
   submitted = false;
   constructor(private router: Router){}
 
-  onSubmit() {
-    this.submitted = true;
-    this.router.navigate(['/all-workflows']);
+  onClickSubmit(data:any) {
+    console.log(data)
+    console.log(this.model)
+    if (data.email===this.model.email && data.password===this.model.password){
+      this.router.navigate(['/all-workflows']);
+    }
+    else{
+      alert("Incorrect login details")
+    }
+    // this.submitted = true;
   }
 
 }
