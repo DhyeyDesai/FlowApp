@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from './User';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -9,11 +11,14 @@ export class LoginComponent {
   handleLogin() {
     console.log('Clicked');
   }
+  
   model = new User("admin@flowapp.com", "admin");
   submitted = false;
+  constructor(private router: Router){}
+
   onSubmit() {
-    console.log(this.model)
     this.submitted = true;
+    this.router.navigate(['/all-workflows']);
   }
 
 }
