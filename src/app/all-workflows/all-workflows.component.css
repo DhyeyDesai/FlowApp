@@ -1,0 +1,110 @@
+.all-workflows-container{
+    max-width: 90vw;
+    margin: auto;
+    padding: 0 16px;
+}
+
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.search-filter{
+    display: flex;
+    gap:20px
+}
+.search-workflows{
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+.filter-btn{
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 15px;
+    box-shadow: 0 0px 0px 0px;
+}
+.create-btn{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+
+}
+.header-divider{
+    position: absolute;
+    left: 0%;
+    width: 100vw;
+    border-top: 1px solid black;
+}
+/* .all-workflows-container{
+    width: 100%;
+    display: flex;
+} */
+.card-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap:25px;
+    
+}
+.card-container a{
+    text-decoration: none;
+}
+.card{
+    position: relative;
+    width: 300px;
+    padding: 20px 20px ;
+    display: flex;
+    gap:30px;
+    flex-direction: column;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.delete-icon{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(50%, -50%);
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border: transparent
+}
+.workflow-title{
+    width: 100%;
+    padding: 5px 15px;
+    border: 1px solid black;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+.workflow-status{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.workflow-status p{
+    font-weight: bold;
+    color: grey;
+}
+.status-icon{
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: transparent
+
+}
+.status-icon-pending{
+    background-color: grey;
+}
+.status-icon-completed{
+    background-color: olivedrab;
+}
