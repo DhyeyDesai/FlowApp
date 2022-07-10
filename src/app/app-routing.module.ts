@@ -6,7 +6,9 @@ import {AllWorkflowsComponent} from "./all-workflows/all-workflows.component"
 const routes: Routes = [
   { path: '', component: LoginComponent },
   { path: 'all-workflows', component: AllWorkflowsComponent },
-  { path: 'create-edit-workflow/:id', component: CreateEditWorkflowComponent },
+  { path: 'edit-workflow/:id', component: CreateEditWorkflowComponent },
+  { path: 'create-workflow', component: CreateEditWorkflowComponent },
+
 
 ];
 

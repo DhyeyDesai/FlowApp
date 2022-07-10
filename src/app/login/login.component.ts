@@ -8,16 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  handleLogin() {
-    console.log('Clicked');
-  }
-  
   model = new User("admin@flowapp.com", "admin");
   submitted = false;
   constructor(private router: Router){}
 
   onClickSubmit(data:any) {
-    console.log(data)
     console.log(this.model)
     if (data.email===this.model.email && data.password===this.model.password){
       this.router.navigate(['/all-workflows']);

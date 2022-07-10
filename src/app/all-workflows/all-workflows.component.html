@@ -1,14 +1,26 @@
-<div class="all-workflows-container">
+<div class="toolbar-container">
+    <div class="toolbar" role="banner">
+      <img
+        width="150"
+        alt="FlowApp Logo"
+        src="../assets/images/flowapp_logo.png"
+      />
+      <div class="spacer"></div>
+       <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><button class="logout-btn">Logout</button></a>
+    </div>
+    </div>
+    <div class="all-workflows-container">
 <div class="header-container">
   <div class="search-filter">
     <input placeholder="Search Workflows" type="text" class="search-workflows"/>
     <button class="filter-btn">Filter</button>
   </div>
-  <button class="create-btn"><b>+</b> Create a workflow</button>
+  <a routerLink="/create-workflow" routerLinkActive="active" ariaCurrentWhenActive="page">
+  <button class="create-btn"><b>+</b> Create a workflow</button></a>
 </div>
 <hr class="header-divider">
 <div class="card-container">
-    <a routerLink="/create-edit-workflow/1" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <a routerLink="/edit-workflow/1" routerLinkActive="active" ariaCurrentWhenActive="page">
     <div class="card">
         <button class="delete-icon">
             <img src="../../assets/images/delete_icon.svg" />
@@ -21,7 +33,7 @@
             </button>
         </div>
     </div></a>
-        <a routerLink="/create-edit-workflow/2" routerLinkActive="active" ariaCurrentWhenActive="page">
+        <a routerLink="/edit-workflow/2" routerLinkActive="active" ariaCurrentWhenActive="page">
     <div class="card">
         <button class="delete-icon">
             <img src="../../assets/images/delete_icon.svg" />

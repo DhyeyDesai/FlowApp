@@ -1,4 +1,15 @@
-<div class="workflow-container">
+<div class="toolbar-container">
+    <div class="toolbar" role="banner">
+      <img
+        width="150"
+        alt="FlowApp Logo"
+        src="../assets/images/flowapp_logo.png"
+      />
+      <div class="spacer"></div>
+       <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page"><button class="logout-btn">Logout</button></a>
+    </div>
+    </div>
+    <div class="workflow-container">
     <div class="header-container">
         <input placeholder="WORKFLOW NAME" type="text" class="edit-workflow-name"/>
       <div class="button-container">
@@ -15,21 +26,21 @@
                 <img src="../../assets/images/checkmark_icon.svg" />
             </button>
             <input class="node-title" placeholder="Name" value = "Task 1"/>
-            <textarea class="node-description"  rows="15" placeholder="Name" value = "Task 1"></textarea>
+            <textarea class="node-description"  rows="15" placeholder="Description" value = "Task 1"></textarea>
         </div>
         <div class="card">
             <button class="status-icon status-icon-blue">
                 <img src="../../assets/images/checkmark_icon.svg" />
             </button>
-            <input class="node-title" placeholder="Name" value = "Task 1"/>
-            <textarea class="node-description"  rows="15" placeholder="Name" value = "Task 1"></textarea>
+            <input class="node-title" placeholder="Name" value = "Task 2"/>
+            <textarea class="node-description"  rows="15" placeholder="Description" value = "Task 1"></textarea>
         </div>
         <div class="card">
             <button class="status-icon status-icon-grey">
                 <img src="../../assets/images/checkmark_icon.svg" />
             </button>
-            <input class="node-title" placeholder="Name" value = "Task 1"/>
-            <textarea class="node-description"  rows="15" placeholder="Name" value = "Task 1"></textarea>
+            <input class="node-title" placeholder="Name" value = "Task 3"/>
+            <textarea class="node-description"  rows="15" placeholder="Description" value = "Task 1"></textarea>
         </div>
        
     </div>

@@ -1,3 +1,36 @@
+.spacer {
+    flex: 1;
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0 calc(5vw + 16px);
+    background-color: #a900b0;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .logout-btn{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: 5px 15px;
+    box-shadow: 0 0px 0px 0px;
+  }
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+.toolbar-container{
+ margin-bottom: 90px;
+}
 .all-workflows-container{
     max-width: 90vw;
     margin: auto;
